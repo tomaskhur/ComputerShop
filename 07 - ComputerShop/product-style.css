@@ -1,0 +1,272 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+ scroll-behavior: smooth;
+}
+
+.navbar-background-color {
+    background-color: hsl(240, 100%, 10%)
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.custom-margin {
+    margin-top: 5rem;
+    margin-left: 19rem;
+    margin-bottom: 2rem;
+}
+
+.card-img {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.card-img img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: contain;
+}
+
+.carousel-item img {
+    max-width: 450px;
+    height: 500px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+
+.page-title {
+    position: relative;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.manufacturer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.manufacturer-logo img {
+    height: 15%;
+    width: 15%;
+    object-fit: contain;
+}
+
+.product-detail-description-buy_button {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy-button {
+    background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    height: 4rem;
+    padding: 0 1.6rem;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all .5s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+.buy-button:hover {
+    box-shadow: #383838 0 1px 30px;
+    transition-duration: .15s;
+}
+
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 10px; /* change width */
+    height: 10px; /* change height */
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+    border-radius: 100%; // /* add border-radius */
+}
+
+.carousel-indicators .active{
+    position: relative;
+    bottom: 2.7px;
+    width: 15px;
+    height: 15px;
+}
+
+.product-detail-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 700px);
+    justify-content: center;
+    grid-gap: 3%;
+}
+
+.product-detail-description-title h2{
+    text-align: center;
+    font-weight: bold;
+}
+
+.product-detail-description-description {
+    margin-top: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    text-align: justify;
+}
+
+.product-detail-description-price_vat h3 {
+    margin-top: 2rem;
+    color: red;
+    text-align: center;
+    font-weight: bold;
+}
+
+.price-label {
+
+    color: black;
+    font-weight: bold;
+}
+
+.product-detail-category {
+  margin-left: 2rem;
+}
+
+.product-detail-category ,a {
+    text-decoration: none;
+}
+
+.breadcrumb p {
+    margin-right: 0.5rem;
+    font-weight: bold;
+}
+
+.breadcrumb-custom-margin {
+    margin-left: 5rem;
+}
+
+.product-detail-description-price h5 {
+    color: gray;
+    text-align: center;
+    font-weight: bold;
+}
+
+.product-detail-description-parameters h3 {
+    font-weight: bold;
+    margin-top: 3rem;
+    margin-left: 2rem;
+
+}
+
+.product-detail-description-parameters table {
+    margin-left: 2rem;
+    width: 100%;
+}
+
+.product-detail-description-parameters table, td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding-left: 6.5rem;
+    padding-right: 6.5rem;
+}
+
+.product-detail-description-parameters tr:nth-child(even) {
+    background-color: #383838;
+    color: white;
+}
+
+.product-detail-description-parameters tr:nth-child(odd) {
+    background-color: gray;
+    color: white;
+}
+
+footer {
+    margin-top: 3rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* CATEGORY !!!!! */
+
+.category-grid {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    justify-content: center;
+    grid-gap: 3%;
+}
+
+.category-title {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 1440px) {
+
+    .product-detail-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .buy-button {
+        padding: 0 2.6rem;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1440px){
+
+    .product-detail-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media  only screen and (max-width: 768px) {
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+    .product-detail-description-parameters table, td, th {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .custom-margin {
+        margin-left: 1rem;
+    }
+}

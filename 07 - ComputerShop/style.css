@@ -1,0 +1,255 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar-background-color {
+    background-color: hsl(240, 100%, 10%)
+}
+
+.card-style {
+    width: 18rem;
+}
+
+.page-title {
+    position: relative;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.shop-title h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 350px);
+    gap: 3%;
+    margin: 5% 0;
+    justify-content: center;
+}
+
+.card {
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #FFF;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
+    transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06)
+}
+
+.card-img {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.card-img img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: contain;
+}
+
+.card-body {
+    padding: 26px 20px 36px 20px;
+}
+
+.card-title {
+    font-family: 'Arial',
+    serif;
+    font-weight: 900;
+    text-transform: capitalize;
+    font-size: 26px;
+    padding-bottom: 20px;
+}
+
+.card-body p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+a.read-more {
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+    letter-spacing: 1.1px;
+    background: #0F1616;
+    margin-bottom: 5px;
+    padding: 24px 0px;
+    border-radius: 15px;
+    display: inline-block;
+    width: 70%;
+    transition: all .2s ease-in-out;
+}
+
+a.read-more:hover {
+    box-shadow: 0px 1px 50px rgba(0, 0, 0, 0.15);
+    background: #404040;
+    color: white;
+}
+
+@media only screen and (max-width: 1441px) and (min-width: 1025px) {
+    .shop-title{
+        margin-bottom: 2rem;
+    }
+
+    .container {
+        max-width: 80%;
+    }
+
+    .grid {
+        gap: 2%;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .card-title {
+        font-size: 22px;
+        padding-bottom: 14px;
+    }
+
+    .card-body p {
+        font-size: 16px;
+    }
+
+    a.read-more {
+        margin-bottom: 50px;
+    }
+}
+
+.card-body > .price-tag{
+    color: red;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.card-body > .price-tag-discount {
+    color: gray;
+    text-decoration: line-through;
+}
+
+.partners-logo p {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.grid-logo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+    grid-gap: 1rem;
+    place-content: center;
+}
+
+.grid-logo-item {
+    padding: 1rem;
+    place-content: center;
+}
+
+.grid-logo-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.grid-logo-item:before {
+    content: "";
+    display: block;
+}
+
+footer {
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2%;
+    }
+    a.read-more {
+        margin-bottom: 50px;
+    }
+    .partners-logo{
+        margin-top: 5rem;
+    }
+}
+
+@media only screen and (max-width: 588px) {
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .card {
+        padding: 20px 10px;
+    }
+
+    .card-body {
+        padding: 7px;
+    }
+
+    .card-title {
+        font-size: 20px;
+        padding-bottom: 7px;
+    }
+
+    .card-body p {
+        font-size: 14px;
+    }
+    a.read-more {
+        margin-bottom: 50px;
+    }
+
+    .partners-logo{
+        margin-top: 15rem;
+    }
+
+    .shop-title {
+        margin-bottom: 20rem;
+    }
+}
+
+
+
+
